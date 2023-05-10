@@ -7,6 +7,10 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Float and Alignment</title>
     <style>
+        * {
+            box-sizing: border-box;
+        }
+
         body {
             font-family: Arial, Helvetica, sans-serif;
             line-height: 1.4em;
@@ -15,6 +19,10 @@
         .container {
             max-width: 960px;
             margin: 30px auto;
+        }
+
+        .clr {
+            clear: both;
         }
 
         .box {
@@ -30,6 +38,16 @@
             text-align: center;
             text-align: justify;
         }
+
+        #box-2 {
+            float: left;
+            width: 68%;
+        }
+
+        #box-3 {
+            float: right;
+            width: 30%;
+        }
     </style>
 </head>
 
@@ -42,13 +60,20 @@
                 explicabo doloribus qui?</p>
         </div>
         <div id="box-2" class="box">
-            <h3>Head 1</h3>
+            <h3>Head 2</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, ut? Commodi nihil natus impedit! Fugiat ab
                 illo
                 explicabo doloribus qui?</p>
         </div>
         <div id="box-3" class="box">
-            <h3>Head 1</h3>
+            <h3>Head 3</h3>
+            <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, ut? Commodi nihil natus impedit! Fugiat ab
+                illo
+                explicabo doloribus qui?</p>
+        </div>
+        <div class="clr"></div>
+        <div id="box-4" class="box">
+            <h3>Head 4</h3>
             <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. A, ut? Commodi nihil natus impedit! Fugiat ab
                 illo
                 explicabo doloribus qui?</p>
